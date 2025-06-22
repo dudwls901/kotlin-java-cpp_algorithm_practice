@@ -7,19 +7,14 @@ class Solution {
         Queue<Integer> q = new LinkedList();
         int count = 0;
         for (int i = 0; i < degree.length; i++) {
-            if (degree[i] == 0) {
-                q.add(i);
-                count++;
-            }
+            if (degree[i] == 0) q.add(i);
         }
 
         while (!q.isEmpty()) {
             int cur = q.poll();
+            count++;
             for (int next : edges[cur]) {
-                if (--degree[next] == 0) {
-                    q.add(next);
-                    count++;
-                }
+                if (--degree[next] == 0) q.add(next);
             }
         }
 
