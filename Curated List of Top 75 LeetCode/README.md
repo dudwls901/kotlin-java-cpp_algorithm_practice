@@ -6,5 +6,5 @@
 4. dp 2 (분할정복 1)
 5. Binary Search 1
 6. 비트 연산 1
-6. 투 포인터 1
-7. graph 1 (dfs 1)
+6. 투 포인터 2
+7. graph 1 (dfs 1, cycle 1)
